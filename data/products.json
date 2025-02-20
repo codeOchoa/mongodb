@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "200W Portable Solar Panels",
+    "description": "High conversion rate & high efficiency",
+    "code": "SFCP0001",
+    "price": 399,
+    "status": true,
+    "stock": 99,
+    "category": "Solar Panels",
+    "thumbnails": [
+      "https://eu.zendure.com/cdn/shop/products/9_3a70b6f5-945a-43a5-920e-107f2e81a690.jpg?v=1677722145&width=540",
+      "img.jpg"
+    ]
+  }
+]
