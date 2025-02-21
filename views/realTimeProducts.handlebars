@@ -1,19 +1,21 @@
-<h1>Real Time List</h1>
-<ul id="product-list">
-    {{#each products}}
-        <li id="product-{{this.id}}">{{this.title}} - ${{this.price}}
-            <button onclick="deleteProduct('{{this.id}}')">🗑</button>
-        </li>
-    {{/each}}
-</ul>
+<div class="management">
+    <h1 class="title-m">Real Time List</h1>
+    <ul class="product-list-m" id="product-list">
+        {{#each products}}
+            <li class="item-list-m" id="product-{{this.id}}">{{this.code}} - {{this.title}} - ${{this.price}}
+                <button class="button" onclick="deleteProduct('{{this.id}}')">🗑</button>
+            </li>
+        {{/each}}
+    </ul>
 
-<h2>Add Product</h2>
-<form id="product-form">
-    <input type="text" id="title" placeholder="Title" required>
-    <input type="text" id="description" placeholder="Description" required>
-    <input type="text" id="code" placeholder="Code" required>
-    <input type="number" id="price" placeholder="Price" required>
-    <input type="number" id="stock" placeholder="Stock" required>
-    <input type="text" id="category" placeholder="Category" required>
-    <button type="submit">Agregar</button>
-</form>
+    <h2 class="subtitle-m">Add Product</h2>
+    <form class="form" id="product-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="description" placeholder="Description" required>
+        <input type="text" id="code" placeholder="Code" required>
+        <input type="number" id="price" placeholder="Price" min="0" max="99999" required>
+        <input type="number" id="stock" placeholder="Stock" min="0" max="999" required>
+        <input type="text" id="category" placeholder="Category" required>
+        <button type="submit">Add</button>
+    </form>
+</div>

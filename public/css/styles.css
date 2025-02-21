@@ -1,0 +1,107 @@
+*    {
+    box-sizing: border-box;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+:root   {
+    --first: #191919;
+    --second: #FAFAFA;
+    --third: #BEB7A4;
+    --fourth: #C97064;
+    --fifth: #BCA371;
+    --sixth: #A6B07E;
+    --seventh: #68A357;
+    --eighth: #32965D;
+    --ninth: #EAEAEAEA;
+    --tenth: #4A1942;
+}
+
+body    {
+    background: var(--second);
+}
+
+.home   {
+    width: 100%;
+}
+
+.title-h  {
+    background: var(--third);
+    color: var(--first);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.product-list-h   {
+    margin: 2rem;
+}
+
+.item-list-h   {
+    color: var(--first);
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0.2rem;
+}
+
+.management {
+    width: 100%;
+}
+
+.title-m    {
+    background: var(--third);
+    color: var(--first);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.product-list-m {
+    margin: 2rem;
+}
+
+.item-list-m    {
+    color: var(--first);
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0.2rem;
+}
+
+.button {
+
+}
+
+.subtitle-m {
+    background: var(--third);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: var(--first);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.form   {
+    margin: 2rem;
+}
+
+.form input {
+    border: 0 solid transparent;
+    border-bottom: 2px solid var(--ninth);
+    border-radius: 15px;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0.5rem;
+}
+
+.form button    {
+    background: var(--sixth);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border: 0 solid transparent;
+    border-radius: 25px;
+    color: var(--first);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
