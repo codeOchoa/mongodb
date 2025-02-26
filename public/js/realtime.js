@@ -4,12 +4,25 @@ const productList = document.getElementById('product-list');
 const productForm = document.getElementById('product-form');
 
 socket.on('updateProducts', (products) => {
-    productList.innerHTML = '';
+    productList.innerHTML = "";
     products.forEach((product) => {
         const li = document.createElement('li');
         li.id = `product-${product.id}`;
-        li.innerHTML = `${product.title} - $${product.price} 
-        <button onclick='deleteProduct('${product.id}')'>🗑</button>`;
+
+        const productText = document.createTextNode(`${product.title} - ${product.price}`);
+        
+        const deleteButton = document.createElement('button');
+        deleteButton.onclick = () => deleteProduct(product.id);
+        
+        const trashIcon = document.createElement('img');
+        trashIcon.src = './trash-can-solid.svg';
+        trashIcon.alt = 'Delete';
+        trashIcon.classList.add('trash-icon');
+
+        deleteButton.appendChild(trashIcon);
+        li.appendChild(productText);
+        li.appendChild(deleteButton);
+
         productList.appendChild(li);
     });
 });

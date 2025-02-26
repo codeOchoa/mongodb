@@ -12,27 +12,5 @@
       "https://eu.zendure.com/cdn/shop/products/9_3a70b6f5-945a-43a5-920e-107f2e81a690.jpg?v=1677722145&width=540",
       "img.jpg"
     ]
-  },
-  {
-    "title": "hola",
-    "description": "como",
-    "code": "123",
-    "price": 123,
-    "stock": 123,
-    "category": "estas",
-    "thumbnails": [],
-    "status": true,
-    "id": "2"
-  },
-  {
-    "title": "test",
-    "description": "test2",
-    "code": "432",
-    "price": 2435,
-    "stock": 213,
-    "category": "hola",
-    "thumbnails": [],
-    "status": true,
-    "id": "3"
   }
 ]

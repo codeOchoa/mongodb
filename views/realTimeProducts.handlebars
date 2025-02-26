@@ -1,9 +1,12 @@
-<div class="management">
-    <h1 class="title-m">Real Time List</h1>
+<section class="management">
+    <div class="management-bar">
+        <h1 class="title-m">Real Time List</h1>
+        <a href="./"><img src="./house-solid.svg" alt="Home" class="home-icon"></a>
+    </div>
     <ul class="product-list-m" id="product-list">
         {{#each products}}
             <li class="item-list-m" id="product-{{this.id}}">{{this.code}} - {{this.title}} - ${{this.price}}
-                <button class="button" onclick="deleteProduct('{{this.id}}')">🗑</button>
+                <button class="button" onclick="deleteProduct('{{this.id}}')"><img src="./trash-can-solid.svg" alt="Borrar" class="trash-icon"></button>
             </li>
         {{/each}}
     </ul>
@@ -18,4 +21,4 @@
         <input type="text" id="category" placeholder="Category" required>
         <button type="submit">Add</button>
     </form>
-</div>
+</section>

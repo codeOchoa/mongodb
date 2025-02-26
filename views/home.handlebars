@@ -1,8 +1,11 @@
-<div class="home">
-    <h1 class="title-h">Product List</h1>
+<section class="home">
+    <div class="home-bar">
+        <h1 class="title-h">Product List</h1>
+        <a href="./management"><img src="./gear-solid.svg" alt="Management" class="management-icon"></a>
+    </div>
     <ul class="product-list-h">
         {{#each products}}
             <li class="item-list-h">{{this.title}} - ${{this.price}}</li>
         {{/each}}
     </ul>
-</div>
+</section>
